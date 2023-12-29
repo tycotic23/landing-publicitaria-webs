@@ -3,13 +3,24 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:content-box;
+    box-sizing:border-box;
+    /* max-width: 100%; */
     /* outline: red solid 2px; */
+}
+
+:root{
+    --color-main-black-filter:rgba(0, 0, 0, 0.692);
+    --color-main-black-filter-light:rgba(0, 0, 0, 0.514);
+    --color-main-aqua-green:#22b573;
+    --color-main-aqua-green-filter:#22b573d2;
+    --light-style:white;
+    --dark-style:black;
+    --bg-nubes:url(assets/nubes-fondo.png);
 }
 
 html{
     font-family: 'Cairo', sans-serif;
-    color:white;
+    color:var(--light-style);
     line-height: 1.2;
 }
 p{
@@ -27,7 +38,7 @@ header{
 }
 
 #head{
-    background-color: black;
+    background-color: var(--dark-style);
     display: flex;
     padding: 1rem;
     width: 100%;
@@ -55,7 +66,7 @@ justify-content: center;
 }
 
 span{
-    color:#22b573;
+    color:var(--color-main-aqua-green);
 }
 
 .caja-redes{
@@ -85,19 +96,19 @@ h1{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:  repeat(2,1fr);
     width: 100%;
-    background-image: url(assets/nubes-fondo.png);
+    background-image: var(--bg-nubes);
     background-attachment: fixed;
 }
 
 .grid-verde{
-    background-color: #22b573d2;
+    background-color: var(--color-main-aqua-green-filter);
     width: 100%;
     height: 100%;
     min-height: 300px;
 }
 
 .grid-negro{
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: var(--color-main-black-filter);
     width: 100%;
     height: 100%;
     min-height: 300px;
@@ -152,13 +163,47 @@ h1{
 }
 
 .parrafo-claro h2{
-    color:#22b573;
-    font-size: 2rem;
+    color:var(--color-main-aqua-green);
+    font-size: 2.5rem;
 }
 
 .parrafo-claro p{
     text-align: justify;
-   
+    font-size: 1.5rem;
+}
+
+.parrafo-encuadrado{
+    margin: 0 2rem;
+    border: var(--color-main-aqua-green) solid 3px;
+    color:black;
+    padding: 1rem;
+}
+
+.parrafo-encuadrado h2{
+    color:var(--color-main-aqua-green);
+    font-size: 2.5rem;
+}
+
+.parrafo-encuadrado p{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.parrafo-con-fondo{
+    margin: 1rem 2rem;
+    background-color: var(--color-main-aqua-green);
+    color:white;
+    padding: 1rem;
+}
+
+.parrafo-con-fondo h2{
+    color:white;
+    font-size: 2.5rem;
+}
+
+.parrafo-con-fondo p{
+    text-align: justify;
+    font-size: 1.5rem;
 }
 
 .tres-cols{
@@ -169,13 +214,13 @@ h1{
 /* lista de requisitos sobre fondo negro */
 .requisitos{
     width: 100%;
-    background-color: black;
+    background-color: var(--dark-style);
     padding: 2rem;
 }
 
 .requisitos h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .requisitos h3{
@@ -198,11 +243,122 @@ h1{
     display: flex;
 }
 
-.requisito-item{
-    padding: 2rem 4rem;
+
+/* .requisito-item{
+    padding: 2rem;
+} */
+
+.servicios{
+    width: 100%;
+    background-image: var(--bg-nubes);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: repeat(6,1fr) max-content;
+    grid-template-columns: 100%;
 }
 
-@media screen and (max-width: 900px){
+.servicios>div{
+    display: flex;
+    gap:2rem;
+    align-items: flex-end;
+    background-color: var(--color-main-aqua-green-filter);
+    padding: 3rem;
+    
+}
+
+.servicios>div:nth-child(2n+1){
+    background-color: var(--color-main-black-filter-light);
+}
+
+.servicios p{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.servicios h3{
+    flex-grow: 2;
+    flex-shrink: 2;
+    width: 100%;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+
+#seccion-nubes{
+    background:none;
+    color:black;
+    display: block;
+    text-align: justify;
+    padding: 2rem;
+}
+
+#seccion-nubes h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+}
+
+#seccion-nubes h3{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+#contactos{
+    background-color: var(--dark-style);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactos h2{
+    font-size: 3rem;
+    color: var(--color-main-aqua-green);
+}
+
+#contactos h2 span{
+    color: white;
+    
+}
+
+#contactos h3{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+#contactos p{
+    font-size: 2.5rem;
+}
+
+#contactos a{
+    text-decoration: none;
+    color: white;
+}
+
+#firma{
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    gap:0.5rem;
+    font-size: 1.7rem;
+}
+#firma img{
+    width: 4rem;
+    object-fit: contain;
+}
+
+#firma span{
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
 
     header{
         flex-direction: column;
@@ -212,5 +368,116 @@ h1{
         min-height: 60vh;
     }
 
+    .requisitos>div{
+        flex-direction: column;
+    }
 
 }
+
+@media screen and (max-width: 900px){
+
+    .tres-cols{
+        column-count: 2;
+    }
+
+    #firma{
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .servicios>div{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        align-items: center;
+        
+    }
+
+}
+
+@media screen and (max-width: 670px){
+
+    #caracteristicas{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:  repeat(3,1fr);
+    }
+
+    #contactos{
+        align-items: center;
+    }
+
+    #firma{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .tres-cols{
+        column-count: 1;
+    }
+
+    #contactos h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #contactos h3{
+        font-size: 1.5rem;
+    }
+    
+    #contactos p{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem !important;
+    }
+
+    .servicios h3{
+        font-size: 2rem;
+    }
+    
+    #seccion-nubes h2{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    #seccion-nubes h3{
+        font-size: 1.6rem;
+    }
+
+    .parrafo-claro h2{
+        font-size: 1.5rem;
+    }
+
+    
+    .parrafo-encuadrado h2{
+        font-size: 1.5rem;
+    }
+    
+    .parrafo-con-fondo h2{
+        color:white;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 430px){
+    #head{
+        flex-direction: column;
+    }
+
+    #caracteristicas h2{
+        font-size: 1.5rem;
+        
+    }
+
+    #caracteristicas img{
+        max-width: 100px;
+    }
+}
+
