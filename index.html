@@ -6,11 +6,51 @@
     <title>Presencia ON-line</title>
     <link rel="shortcut icon" href="assets/faviconV.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    
     <meta
         name="description"
         content="Tomas Stevan - Desarollo web y Diseño Multimedia para empresas y emprendedores.">
 </head>
 <body>
+    
+    <nav>
+        <div id="nav-container">
+            <img id="menu" src="assets/menu.svg" alt="menu">
+        </div>
+        <div class="visible-nav nav-hidden">
+            <div>
+                <div class="firma">
+                    <img src="assets/logo-blanco.png" alt="logotipo-tomas-stevan">
+                    <p>Tomas <span>Stevan</span></p>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/tomas_stevan/"><img src="assets/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.youtube.com/@TomasStevan"><img src="assets/youtube.svg" alt="Youtube"></a>
+                    <a href="https://www.behance.net/tomasstevan"><img src="assets/behance.svg" alt="Behance"></a>
+                    <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/"><img src="assets/linkedin.svg" alt="Linkedin"></a>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#head2">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#proceso">¿Cómo es el proceso?</a></li>
+                    <li><a href="#requisitos">¿Qué debo tener en cuenta antes?</a></li>
+                    <li><a href="#paginas">Tipos de páginas</a></li>
+                    <li><a href="#diferencias">¿Cuál es la diferencia entre página y app?</a></li>
+                    <li><a href="#otros-servicios">Servicios extra</a></li>
+                    <li><a href="#contactos">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="redes-sociales botones">
+                    <a class="wsp button" href="https://wa.me/5493417197518"><img src="assets/whatsapp.svg" alt="whatsapp">Enviar Whatsapp</a>
+                    <a  class="gmail button" href="mailto:tomasstevabw@gmail.com"><img src="assets/gmail.svg" alt="email">Enviar Email</a>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
     <header>
         <!-- computadora con fondo negro -->
         <div id="head">
@@ -71,7 +111,7 @@
         </div>
     </header>
     <main>
-        <div class="parrafo-claro tres-cols">
+        <div id="proceso" class="parrafo-claro tres-cols">
             <h2>El Proceso</h2>
             <p>Estarías acompañado durante todo el proceso de creación e implementación del sitio para que no te pierdas nada de lo sucede.
                 Se comienza con una reunión donde me contás tus objetivo y allí trabajamos sobre las funcionalidades y secciones que va a tener la página. 
@@ -79,7 +119,7 @@
                 Luego viene la etapa de estilización donde se le da la forma final y se desarrollan los elementos finales del sitio. Puede haber más o menos instancias de corrección según la complejidad y tamaño del sitio.
                 Por último, una vez aprobado, se pone en marcha en el hosting que contrataste para que tus clientes ya puedan entrar. </p>
         </div> 
-        <div class="requisitos">
+        <div class="requisitos" id="requisitos">
             <h2>¿Qué debo tener antes?</h2>
             <div>
                 <div class="requisito-item">
@@ -111,7 +151,7 @@
             <p>Para que te sea más sencillo elegir la mejor opción para vos, te explico algunas de las webs más comunes que podés encontrar en internet. Todas las soluciones que armo son personalizadas según tus necesidades, más allá de los paquetes pre existentes. </p>
         </div>
 
-        <div class="servicios">
+        <div class="servicios" id="paginas">
             <div>
                 <h3>Página<br>
                     Institucional</h3>
@@ -157,7 +197,7 @@
                     tener otras funciones para ayudar a retener a tus clientes,
                     facilitar los pagos, los pedidos, recordatorios, entre otras más.</p>
             </div>
-            <div>
+            <div id="diferencias">
                 <h3>Página o app<br>
                     Personalizada</h3>
                 <p>Además de todas las anteriores mencionadas existen
@@ -176,7 +216,7 @@
                     y hacer pedidos es una aplicación.</p>
             </div>
         </div>
-        <div class="parrafo-claro">
+        <div id="otros-servicios" class="parrafo-claro">
             <h2>Ya tengo mi sitio web. ¿Y ahora?</h2>
             <p>Una vez entregado el sitio web en su totalidad, no termina ahí. Es recién el comienzo para que puedas
                 aprovechar al máximo todas las ventajas de contar con esta herramienta.</p>
@@ -204,11 +244,12 @@
             <h3>Agendemos una reunión</h3>
             <a href="mailto:tomasstevabw@gmail.com"><p>tomasstevanbw<span>@</span>gmail.com</p></a>
             <p><span>+</span>54 9 <span>(</span>341<span>)</span> 719<span>-</span>7518</p>
-            <div id="firma">
+            <div class="firma">
                 <img src="assets/logo-blanco.png" alt="logotipo-tomas-stevan">
                 <p>Tomas <span>Stevan</span></p>
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
