@@ -35,19 +35,43 @@ header{
     
     display: flex;
     min-height: 100vh;
+    flex-direction: column;
+}
+
+.header__p{
+    text-align: center;
+    font-size: 2rem;
 }
 
 #head{
     background-color: var(--dark-style);
+    background-image: url(assets/grafico.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    padding: 1rem;
+    flex-direction: column;
+    padding: 3rem;
     width: 100%;
 }
 
-#head>div{
+.sabias{
+    width: 100%;
+    background-color: var(--dark-style);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.sabias>div{
+    width: 80%;
+}
+
+/* #head>div{
     display: flex;
     flex-direction: column;
-}
+} */
 
 #head1{
 flex-grow:3;
@@ -71,10 +95,10 @@ span{
 
 .caja-redes{
     display: flex;
-    gap:1rem;
+    /* gap:1rem; */
     align-items: center;
     justify-content: space-between;
-    max-width: 50%;
+    max-width: 13rem;
 }
 
 .caja-redes img{
@@ -83,12 +107,16 @@ span{
 
 h1{
     line-height: 1.2;
-    font-size: 3rem;
+    font-size: clamp(1rem, 10vw, 5rem);
     width: max-content;
 }
 
-#head2 p{
-    font-size: 1.5rem;
+.title{
+    font-size:3rem;
+    text-align: center;
+    font-weight: 600;
+    color:var(--color-main-aqua-green);
+    padding-top: 2rem;
 }
 
 #caracteristicas{
@@ -119,7 +147,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    min-height: 400px;
 }
 
 #caracteristicas p,#caracteristicas h2{
@@ -128,6 +156,10 @@ h1{
 
 #caracteristicas p,#caracteristicas li{
     font-size: 1.2rem;
+}
+
+#caracteristicas p{
+    text-align: center;
 }
 
 #caracteristicas h2{
@@ -459,9 +491,9 @@ nav{
 
 @media screen and (max-width: 1200px){
 
-    header{
+    /* header{
         flex-direction: column;
-    }
+    } */
 
     #head,#caracteristicas{
         min-height: 60vh;
