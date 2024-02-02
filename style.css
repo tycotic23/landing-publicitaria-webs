@@ -107,16 +107,47 @@ header{
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
 }
 
-#head{
+.fondo-modular-up{
     background-image:  url(assets/cuadros-modulo-up.png);
     background-size: auto;
     background-position: top;
     background-repeat:repeat-x;
+}
+
+.fondo-modular{
+    background-image:  url(assets/cuadros-modulo.png);
+    background-size: auto;
+    background-position: bottom;
+    background-repeat:repeat-x;
+}
+
+.fondo-modular-claro-up{
+    background-image:  url(assets/cuadros-modulo-claro-up-05.png);
+    background-size: auto;
+    background-position: top;
+    background-repeat:repeat-x;
+}
+
+.fondo-modular-claro{
+    background-image:  url(assets/cuadros-modulo-claro-04.png);
+    background-size: auto;
+    background-position: bottom;
+    background-repeat:repeat-x;
+}
+
+#head{
+    
     display: flex;
-    flex-direction: column;
     padding: 3rem;
     width: 100%;
+    justify-content: flex-start;
+    gap:50px;
 }
+
+.head__img img{
+    height: 250px;
+}
+
 
 .sabias{
     width: 100%;
@@ -128,10 +159,6 @@ header{
 }
 
 .sabias>div{
-    background-image:  url(assets/cuadros-modulo.png);
-    background-size: auto;
-    background-position: bottom;
-    background-repeat:repeat-x;
     padding: 3rem 20%;
 
 }
@@ -294,6 +321,12 @@ h1{
     max-width: 150px;
 }
 
+.mini-footer{
+    border-top: var(--color-main-aqua-green) solid 1px;
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
 /* parrafo que explica el proceso */
 
 .parrafo-claro{
@@ -386,13 +419,15 @@ h1{
 /* .requisito-item{
     padding: 2rem;
 } */
-
-/* servicios */
-.servicios{
-    width: 100%;
+.bg-nubes{
     background-image: var(--bg-nubes);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+/* servicios */
+.servicios{
+    width: 100%;
+    
    
     display: flex;
     flex-direction: column;
@@ -426,10 +461,13 @@ h1{
 
 .foto-parrafo{
     width: 100%;
-    
     display: flex;
     padding: 3rem;
     gap:2rem;
+}
+
+.foto-parrafo img{
+    max-height:50vh;
 }
 
 .bg-dark-filter{
@@ -443,18 +481,268 @@ h1{
 /*  */
 
 
-/* portafolio */
-.portafolio{
-    padding: 2rem;
+/* banner */
+.banner{
+    margin: 2rem;
+    background-image: var(--bg-nubes);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
 }
 
-.portafolio>div{
+.banner>div{
     padding: 1rem;
-    background-color: var(--color-main-aqua-green);
-    color:black;
+    background-color: var(--color-main-black-filter);
+    color:white;
     border-radius: 50px;
     min-height: 100vh;
 }
+
+/* portafolio */
+.full-carrousel{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.full-carrousel__item{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.full-carrousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.full-carrousel__content{
+   position: absolute;
+   top:0;
+   left:0;
+   padding: 10%;
+   font-size: 2rem;
+   text-align: left;
+   align-items: center;
+   width: 100%;
+}
+
+.full-carrousel__thumbnail{
+    position: absolute;
+    bottom: 1rem;
+    left:50%;
+    width: max-content;
+    z-index: 2;
+    display:flex;
+    gap:20px;
+}
+
+.full-carrousel__thumbnail__item{
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-carrousel__thumbnail__content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+}
+
+.arrows{
+    position: absolute;
+    top:80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display:flex;
+    gap:10px;
+    align-items: center;
+    z-index: 10;
+}
+
+.arrows button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-main-black-filter);
+    border-radius: 50%;
+    color:var(--color-main-aqua-green);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.full-carrousel__item:first-child{
+    z-index: 1;
+}
+
+.full-carrousel__item:first-child .full-carrousel__title,
+.full-carrousel__item:first-child .full-carrousel__clasificacion,
+.full-carrousel__item:first-child .full-carrousel__cliente,
+.full-carrousel__item:first-child .full-carrousel__descripcion,
+.full-carrousel__item:first-child .full-carrousel__botones{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s linear forwards;
+}
+
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter:blur(0);
+        transform: translateY(0);
+    }
+}
+
+.full-carrousel__item:first-child .full-carrousel__title{
+    animation-delay: 1.2s;
+}
+
+.full-carrousel__item:first-child .full-carrousel__clasificacion{
+    animation-delay: 1.4s;
+}
+
+.full-carrousel__item:first-child .full-carrousel__cliente{
+    animation-delay: 1.6s;
+}
+
+.full-carrousel__item:first-child .full-carrousel__descripcion{
+    animation-delay: 1.8s;
+}
+
+.full-carrousel__item:first-child .full-carrousel__botones{
+    animation-delay: 2s;
+}
+
+    /* se aplica caundo se toca el boton de siguiente */
+.next .full-carrousel__item:first-child img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    animation: showImage 0.5s linear 1 forwards;
+    border-radius: 20px;
+}
+
+@keyframes showImage {
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+.next .full-carrousel__thumbnail__item:last-child{
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+    }
+}
+
+.next .full-carrousel__thumbnail{
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+    to{
+        transform: translateX(0);
+    }
+}
+
+    /* con el boton previo */
+ /* se aplica caundo se toca el boton de siguiente */
+ .prev .full-carrousel__item:nth-child(2){
+    z-index: 2;
+
+ }
+
+ .prev .full-carrousel__item:nth-child(2) img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage {
+    to{
+        width: 150px;
+        height: 220px;
+        left: 50%;
+        bottom: 1rem;
+        border-radius: 20px;
+    }
+}
+
+.prev .full-carrousel__thumbnail__item:first-child{
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+    opacity: 0;
+}
+
+.full-carrousel__item:nth-child(2) .full-carrousel__clasificacion,
+.full-carrousel__item:nth-child(2) .full-carrousel__cliente,
+.full-carrousel__item:nth-child(2) .full-carrousel__descripcion,
+.full-carrousel__item:nth-child(2) .full-carrousel__title,
+.full-carrousel__item:nth-child(2) .full-carrousel__botones{
+    animation: contentOut 1.5s linear forwards;
+}
+
+@keyframes contentOut {
+    to{
+        
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+    }
+}
+
+.prev .arrows button, .next .arrows button{
+    pointer-events: none;
+}
+
+
+.full-carrousel__time{
+    width: 0%;
+    min-height: 5px;
+    background-color: var(--color-main-aqua-green-filter);
+    position: absolute;
+    z-index: 50;
+    bottom:0;
+    left: 0;
+    content: '';
+
+}
+
+.next .full-carrousel__time,.prev .full-carrousel__time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+    to{
+        width: 0%;
+    }
+}
+
 /*  */
 /* seccion de "lo que puede tener mi pagin" */
 
@@ -515,6 +803,7 @@ h1{
 
 .btn-sombra{
     display: grid;
+    z-index: 10;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
@@ -593,17 +882,28 @@ h1{
     font-weight: 600;
 }
 
-#contactos{
+footer{
     background-color: var(--dark-style);
+}
+
+#contactos{
+    
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #contactos h2{
     font-size: 3rem;
     color: var(--color-main-aqua-green);
+    font-weight: 400;
 }
+
+#contactos h2 strong{
+    font-size: 4rem;
+}
+
 
 #contactos h2 span{
     color: white;
@@ -617,6 +917,7 @@ h1{
 
 #contactos p{
     font-size: 2.5rem;
+    font-weight: 400;
 }
 
 #contactos a{
@@ -627,14 +928,16 @@ h1{
 .firma{
     
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap:0.5rem;
     font-size: 1.7rem;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
-#contactos .firma{
+/* #contactos .firma{
     align-self: flex-end;
-}
+} */
 .firma img{
     width: 4rem;
     object-fit: contain;
@@ -661,7 +964,7 @@ h1{
 nav{
     position: fixed;
     width: 100%;
-    
+    z-index: 100;
 }
 
 .visible-nav{
@@ -764,6 +1067,10 @@ nav{
     position: relative;
     width: 300px;
     height: 300px;
+}
+
+.recuadro__item-card-container:hover{
+    cursor: pointer;
 }
 
 .recuadro__item-card{
@@ -1031,6 +1338,10 @@ nav{
     border: var(--color-main-aqua-green) solid 3px;
 }
 
+.contenedor-acordeon__item:hover{
+    cursor: pointer;
+}
+
 .contenedor-acordeon__h3{
     color:var(--color-main-aqua-green);
     position: relative;
@@ -1078,6 +1389,11 @@ nav{
 
 .separador-img{
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 @media screen and (max-width: 1200px){

@@ -56,13 +56,19 @@
 
     <header>
         <!-- computadora con fondo negro -->
-        <div id="head">
-            <h1 ><strong class="anim-escribir" data-text="Tu negocio">Tu negocio</strong> <br> <span>ON</span>-LINE</h1>
+        <div id="head" class="fondo-modular-up">
+            <div class="head__img">
+                <img src="assets/logo-blanco.png" alt="">
+            </div>
+            <div class="head__txt">
+                <h1 ><strong class="anim-escribir" data-text="Tu negocio">Tu negocio</strong> <br> <span>ON</span>-LINE</h1>
                 <div class="caja-redes">
                     <a href="https://www.instagram.com/tomas_stevan"><img src="assets/instagram-icono-redondo.png" alt="instagram"></a>
                     <a href="https://www.behance.net/tomasstevan"><img src="assets/behance-icono-redondo.png" alt="behance"></a>
                     <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/"><img src="assets/linkedin-icono-redondo.png" alt="linkedin"></a>
                 </div>
+            </div>
+            
             <!--<div class="flex-h">
                 
                 <div>
@@ -88,7 +94,7 @@
         </div>
         
         <div class="sabias">
-            <div>
+            <div class="fondo-modular">
                 <h2 class="title title--white">Tu página soñada es posible</h2>
                 <p class="header__p">¿Sabías que <span>a los consumidores no les gusta esperar</span>? Las páginas que tardan demasiado en cargar pierden oportunidades de venta.</p>
                 <p class="header__p"><br><span>No pierdas oportunidades ni tiempo</span>. Cruzá las fronteras digitales y llegá a nuevos clientes</p>
@@ -115,7 +121,7 @@
         <div class="header__h2">
             <h2>Descubrí</h2>
         </div>
-        <div id="servicios" class="servicios">
+        <div id="servicios" class="servicios bg-nubes">
             <h2>Packs especialmente armados para vos</h2>
             <div class="servicios__packs">
                 <div class="servicios__item">
@@ -347,7 +353,7 @@
                     <h3 class="contenedor-acordeon__h3">mi titulo</h3>
                     <p>mi contenido que describe al titulo que suelen ser un par de renglones</p>
                 </div>
-                <div class="contenedor-acordeon__item active">
+                <div class="contenedor-acordeon__item">
                     <h3 class="contenedor-acordeon__h3">mi titulo</h3>
                     <p>mi contenido que describe al titulo que suelen ser un par de renglones</p>
                 </div>
@@ -358,10 +364,11 @@
             </div>
             
         </div>
-        <div class="separador-img">
-            <img src="assets/ejemplo.jpg" alt="">
+        <div class="separador-img fondo-modular-claro">
+            <p><br><br><br><br></p>
+            <img src="assets/ejemplo-copia.png" alt="">
         </div>
-        <div class="sabias">
+        <div class="sabias fondo-modular">
             <div>
                 <h2 class="title title--white">Tu página soñada es posible</h2>
                 <p class="header__p">¿Sabías que <span>a los consumidores no les gusta esperar</span>? Las páginas que tardan demasiado en cargar pierden oportunidades de venta.</p>
@@ -438,14 +445,8 @@
             </div>
             
         </div>
-        <div class="portafolio">
-            <div>
-                <h2>Páginas increíbles</h2>
-                <p>Explorá</p>
-            </div>
-        </div>
-        <!-- lo que puede tener mi pagina -->
-        <div class="componentes-container">
+         <!-- lo que puede tener mi pagina -->
+         <div class="componentes-container">
             <h2>Lo que puede tener mi página</h2>
             <div class="componentes">
                 <div class="componentes__item">
@@ -482,6 +483,113 @@
 
             </div>
         </div>
+
+        <!-- portafolio -->
+        <div class="full-carrousel">
+            <div class="full-carrousel__lista">
+                <!-- "home" -->
+                <div class="full-carrousel__item">
+                    <img src="assets/bg1.jpg" alt="">
+                    <div class="full-carrousel__content">
+                        <h3 class="full-carrousel__title"> Mi titulo</h3>
+                        <h4 class="full-carrousel__clasificacion"> Página institucional</h4>
+                        <p class="full-carrousel__cliente">fulanito</p>
+                        <p class="full-carrousel__descripcion">
+                            esta es la descripcion de mi pgina y de mi cliente
+                        </p>
+                        <!-- estos botones deberian ser como los de arriba de todo pero en blanco -->
+                        <div class="full-carrousel__botones">
+                            <a href="">Expandir</a>
+                            <a href="">Comprar ahora</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- proyecto 1 -->
+                <div class="full-carrousel__item">
+                    <img src="assets/bg2.jpg" alt="">
+                    <div class="full-carrousel__content">
+                        <h3 class="full-carrousel__title"> Mi titulo 2</h3>
+                        <h4 class="full-carrousel__clasificacion"> Página institucional</h4>
+                        <p class="full-carrousel__cliente">fulanito</p>
+                        <p class="full-carrousel__descripcion">
+                            esta es la descripcion de mi pgina y de mi cliente
+                        </p>
+                        <!-- estos botones deberian ser como los de arriba de todo pero en blanco -->
+                        <div class="full-carrousel__botones">
+                            <a href="">Expandir</a>
+                            <a href="">Comprar ahora</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- proyecto 2 -->
+                <div class="full-carrousel__item">
+                    <img src="assets/bg3.jpg" alt="">
+                    <div class="full-carrousel__content">
+                        <h3 class="full-carrousel__title"> Mi titulo 2</h3>
+                        <h4 class="full-carrousel__clasificacion"> Página institucional</h4>
+                        <p class="full-carrousel__cliente">fulanito</p>
+                        <p class="full-carrousel__descripcion">
+                            esta es la descripcion de mi pgina y de mi cliente
+                        </p>
+                        <!-- estos botones deberian ser como los de arriba de todo pero en blanco -->
+                        <div class="full-carrousel__botones">
+                            <a href="">Expandir</a>
+                            <a href="">Comprar ahora</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- lista de miniaturas que se corresponden con la otra lista -->
+            <div class="full-carrousel__thumbnail">
+                <div class="full-carrousel__thumbnail__item">
+                    <img src="assets/bg2.jpg" alt="">
+                    <div class="full-carrousel__thumbnail__content">
+                        <h3 class="full-carrousel__thumbnail__title"> Mi titulo</h3>
+                        <p class="full-carrousel__thumbnail__descripcion">
+                            esta es la descripcion de mi pgina y de mi cliente
+                        </p>
+                    </div>
+                </div>
+                <div class="full-carrousel__thumbnail__item">
+                    <img src="assets/bg3.jpg" alt="">
+                    <div class="full-carrousel__thumbnail__content">
+                        <h3 class="full-carrousel__thumbnail__title"> Mi titulo</h3>
+                        <p class="full-carrousel__thumbnail__descripcion">
+                            esta es la descripcion de mi pgina y de mi cliente
+                        </p>
+                    </div>
+                </div>
+                <div class="full-carrousel__thumbnail__item">
+                    <img src="assets/bg1.jpg" alt="">
+                    <div class="full-carrousel__thumbnail__content">
+                        <h3 class="full-carrousel__thumbnail__title"> Mi titulo</h3>
+                        <p class="full-carrousel__thumbnail__descripcion">
+                            esta es la descripcion de mi pgina y de mi cliente
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button class="arrows__prev" id="arrows__prev"><</button>
+                <button class="arrows__next" id="arrows__next">></button>
+            </div>
+            <div class="full-carrousel__time"></div>
+        </div>
+        <div class="separador-img fondo-modular-claro">
+            <p><br><br><br><br></p>
+            <img src="assets/ejemplo-copia.png" alt="">
+        </div>
+        <!-- <div class="banner">
+            <div>
+                <h2>Páginas increíbles</h2>
+                <p>Explorá</p>
+            </div>
+            
+        </div> -->
+       
         <!--  -->
 
         <!-- <div id="proceso" class="parrafo-claro">
@@ -589,38 +697,46 @@
                     y hacer pedidos es una aplicación.</p>
             </div>
         </div> -->
-        <div id="otros-servicios" class="parrafo-claro cuadro">
-            <h2>Ya tengo mi sitio web. ¿Y ahora?</h2>
-            <p>Una vez entregado el sitio web en su totalidad, no termina ahí. Es recién el comienzo para que puedas
-                aprovechar al máximo todas las ventajas de contar con esta herramienta.</p>
+        <div>
+            <div id="otros-servicios" class="parrafo-claro cuadro">
+                <h2>Ya tengo mi sitio web. ¿Y ahora?</h2>
+                <p>Una vez entregado el sitio web en su totalidad, no termina ahí. Es recién el comienzo para que puedas
+                    aprovechar al máximo todas las ventajas de contar con esta herramienta.</p>
+            </div>
+            <div class="parrafo-encuadrado">
+                <h2>Servicio<br>
+                    de mantenimiento</h2>
+                <p>La mayoría de las páginas requieren pequeños cambios constantes en algunos textos, fotos, precios
+                    u otros datos. Este servicio mensual incluye todos estos pequeños cambios además de mantener
+                    actualizado y en funcionamiento el sitio.</p>
+            </div>
+            <div class="parrafo-con-fondo">
+                <h2>Publicidad y<br>
+                    difusión posterior</h2>
+                <p>Para aumentar tu presencia en línea y llegar a más clientes, la publicidad es una buena manera de
+                    darte a conocer y ofrecer tus servicios o productos. Un sitio que además de informativo, esté
+                    alineado a tus estrategias publicitarias ayuda a mejorar el impacto de cualquier campaña.</p>
+            </div>
         </div>
-        <div class="parrafo-encuadrado">
-            <h2>Servicio<br>
-                de mantenimiento</h2>
-            <p>La mayoría de las páginas requieren pequeños cambios constantes en algunos textos, fotos, precios
-                u otros datos. Este servicio mensual incluye todos estos pequeños cambios además de mantener
-                actualizado y en funcionamiento el sitio.</p>
-        </div>
-        <div class="parrafo-con-fondo">
-            <h2>Publicidad y<br>
-                difusión posterior</h2>
-            <p>Para aumentar tu presencia en línea y llegar a más clientes, la publicidad es una buena manera de
-                darte a conocer y ofrecer tus servicios o productos. Un sitio que además de informativo, esté
-                alineado a tus estrategias publicitarias ayuda a mejorar el impacto de cualquier campaña.</p>
-        </div>
+        
 
     </main>
     <footer>
-        <div id="contactos">
+        <div id="contactos" class="fondo-modular">
             <h2>¿Te quedaste con dudas?<br>
-                ¿Ya te decidiste a crear tu presencia <span>ON</span>-LINE?</h2>
+                ¿Ya te decidiste a crear tu <strong>presencia <span>ON</span>-LINE?</strong></h2>
+            <p><br></p>
             <h3>Agendemos una reunión</h3>
             <a href="mailto:tomasstevabw@gmail.com"><p>tomasstevanbw<span>@</span>gmail.com</p></a>
             <p><span>+</span>54 9 <span>(</span>341<span>)</span> 719<span>-</span>7518</p>
+            <p><br></p>
             <div class="firma">
                 <img src="assets/logo-blanco.png" alt="logotipo-tomas-stevan">
                 <p>Tomas <span>Stevan</span></p>
             </div>
+        </div>
+        <div class="mini-footer">
+            <p>No hay sueños imposibles, <span>¿listo para hacer realidad el tuyo?</span></p>
         </div>
     </footer>
     <script src="index.js"></script>
