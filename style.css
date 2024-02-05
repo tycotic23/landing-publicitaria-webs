@@ -12,7 +12,7 @@
     --color-main-black-filter:rgba(0, 0, 0, 0.692);
     --color-main-black-filter-light:rgba(0, 0, 0, 0.514);
     --color-main-aqua-green:#22b573;
-    --color-main-aqua-green-filter:#22b573d2;
+    --color-main-aqua-green-filter:#22b573c0;
     --light-style:white;
     --dark-style:black;
     --bg-nubes:url(assets/nubes-fondo.png);
@@ -38,7 +38,16 @@ header{
     min-height: 100vh;
     flex-direction: column;
 }
-.header__banner{
+
+.header-flex{
+    display: flex;
+}
+
+.header-flex>img{
+    width: 100%;
+}
+
+/* .header__banner{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +60,46 @@ header{
   animation-iteration-count:infinite ;
   animation-timing-function: linear;
   background-repeat: repeat-y;
+} */
+
+.header__banner{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 2rem;
+    background-image: linear-gradient(var(--color-main-aqua-green-filter),var(--color-main-aqua-green-filter)),url(assets/nubes-fondo-doble.jpg);
+    padding: 2rem;
 }
+
+.header__banner img{
+    grid-row-start: span 2;
+}
+
+.header__banner p{
+    border-bottom: 1px white solid;
+    width: 100%;
+    text-align: center;
+}
+
+.header__banner p span{
+    color:black;
+}
+
+.bk-nubes-animadas{
+    background-image: url(assets/nubes-fondo-doble.jpg);
+    
+    background-position-y: 0%;
+
+    animation-name: bk-animate;
+  animation-duration: 26s;
+  animation-iteration-count:infinite ;
+  animation-timing-function: linear;
+  background-repeat: repeat-y;
+}
+
 @keyframes bk-animate {
     0%   {background-position-y: 0%;}
     100% {background-position-y: 120%;}
@@ -249,6 +297,10 @@ h1{
     color: var(--color-main-aqua-green);
 }
 
+.title--black{
+    color: black;
+}
+
 .title--white{
     color: white;
 }
@@ -424,6 +476,13 @@ h1{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.bg-filter-nubes{
+    
+    background:linear-gradient(var(--color-main-black-filter),var(--color-main-black-filter)),var(--bg-nubes);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* servicios */
 .servicios{
     width: 100%;
@@ -435,28 +494,52 @@ h1{
     align-items: center;
 }
 
+.servicios__h3{
+    color: white;
+    font-size: 1.5rem;
+}
+
 .servicios__packs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
     align-items: end;
     padding: 3rem;
+    min-height: 90vh;
 }
 
 .servicios__item{
-    background-color: var(--light-style);
+    background-color: var(--color-main-aqua-green-filter);
     border-radius:30px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     color:black;
+    height: 80%;
+    gap:0.3rem;
+}
+
+.servicios__item:nth-child(2){
+    height: 100%;
 }
 
 .servicios__item ul{
    list-style: none;
+   text-align: left;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   align-self: flex-start;
+}
+
+.button-comprar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .foto-parrafo{
@@ -883,8 +966,13 @@ h1{
 }
 
 footer{
-    background-color: var(--dark-style);
+    background-color: var(--dark-style);/* 
+    background:linear-gradient(var(--color-main-black-filter),var(--color-main-black-filter)),var(--bg-nubes);
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
 }
+
+
 
 #contactos{
     
