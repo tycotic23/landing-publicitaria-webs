@@ -316,9 +316,7 @@ h1{
     text-align: center;
     font-weight: 600;
     padding: 1rem;
-    top:2rem;
-    left:0;
-    position: sticky;
+    
 }
 
 .title--aqua{
@@ -424,7 +422,7 @@ h1{
 
 .parrafo-claro{
     color:black;
-    padding: 2rem;
+    padding: 1rem 3rem;
 }
 
 .parrafo-claro h2{
@@ -435,6 +433,7 @@ h1{
 .parrafo-claro p{
     text-align: justify;
     font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .parrafo-encuadrado{
@@ -543,6 +542,16 @@ h1{
     font-size: 1.5rem;
 }
 
+.sticky{
+    top:2rem;
+    left:0;
+    position: sticky;
+}
+
+.relative{
+    position: relative;
+}
+
 .servicios__packs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -624,8 +633,13 @@ h1{
 .foto-parrafo{
     width: 100%;
     display: flex;
-    padding: 3rem;
+    align-items: center;
+    padding: 3rem 6rem;
     gap:2rem;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
 }
 
 .foto-parrafo img{
@@ -916,8 +930,11 @@ h1{
     
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(200px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-columns: 200px;
+    grid-auto-flow: dense;
     gap:20px;
     align-items: center;
     justify-items: center;
