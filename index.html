@@ -16,7 +16,7 @@
     
     <nav>
         <div id="nav-container">
-            <img id="menu" src="assets/menu.svg" alt="menu">
+            <img class="pointer" id="menu" src="assets/menu.svg" alt="menu">
         </div>
         <div class="visible-nav nav-hidden">
             <div>
@@ -25,10 +25,10 @@
                     <p>Tomas <span>Stevan</span></p>
                 </div>
                 <div class="redes-sociales">
-                    <a href="https://www.instagram.com/tomas_stevan/"><img src="assets/instagram.svg" alt="instagram"></a>
-                    <a href="https://www.youtube.com/@TomasStevan"><img src="assets/youtube.svg" alt="Youtube"></a>
-                    <a href="https://www.behance.net/tomasstevan"><img src="assets/behance.svg" alt="Behance"></a>
-                    <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/"><img src="assets/linkedin.svg" alt="Linkedin"></a>
+                    <a href="https://www.instagram.com/tomas_stevan/"><img  class="redes-sociales__img" src="assets/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.youtube.com/@TomasStevan"><img  class="redes-sociales__img" src="assets/youtube.svg" alt="Youtube"></a>
+                    <a href="https://www.behance.net/tomasstevan"><img  class="redes-sociales__img" src="assets/behance.svg" alt="Behance"></a>
+                    <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/"><img  class="redes-sociales__img" src="assets/linkedin.svg" alt="Linkedin"></a>
                 </div>
             </div>
             <div>
@@ -45,8 +45,8 @@
             </div>
             <div>
                 <div class="redes-sociales botones">
-                    <a class="wsp button" href="https://wa.me/5493417197518"><img src="assets/whatsapp.svg" alt="whatsapp">Enviar Whatsapp</a>
-                    <a  class="gmail button" href="mailto:tomasstevabw@gmail.com"><img src="assets/gmail.svg" alt="email">Enviar Email</a>
+                    <a class="wsp button" href="https://wa.me/5493417197518"><img class="redes-sociales__img" src="assets/whatsapp.svg" alt="whatsapp">Enviar Whatsapp</a>
+                    <a  class="gmail button" href="mailto:tomasstevabw@gmail.com"><img class="redes-sociales__img" src="assets/gmail.svg" alt="email">Enviar Email</a>
                 </div>
             </div>
         </div>
@@ -119,12 +119,12 @@
                 </div> -->
                 <p><br><br><br><br><br></p>
                 <div class="boton-redondo">
-                    <p class="boton-redondo__texto">Aumentar mis ventas</p>
+                    <p class="boton-redondo__texto hover-izquierdo">Aumentar mis ventas</p>
                     
                     <div class="boton-redondo__or">
                         
                     </div>
-                    <p class="boton-redondo__texto">Consolidar mi marca</p>
+                    <p class="boton-redondo__texto hover-derecho">Consolidar mi marca</p>
                 </div>
                 <p><br><br><br></p>
             </div>
@@ -229,7 +229,7 @@
                     </ul>
                    <!--  <p class="servicios__precio">$</p> -->
                    <div class="button-comprar-container">
-                        <a href="" class="button-comprar">Cotizar</a>
+                        <a href="https://wa.me/5493417197518" class="button-comprar">Cotizar</a>
                     </div>
                 </div>
                 <div class="servicios__item servicios__item--resaltado">
@@ -250,7 +250,7 @@
                         <li>Menú de navegación pegado arriba de la pantalla</li>
                     </ul>
                     <div class="button-comprar-container">
-                        <a href="" class="button-comprar">Cotizar</a>
+                        <a href="https://wa.me/5493417197518" class="button-comprar">Cotizar</a>
                     </div>
                 </div>
                 <div class="servicios__item">
@@ -271,19 +271,20 @@
                         <li>Menú de navegación personalizado</li>
                     </ul>
                     <div class="button-comprar-container">
-                        <a href="" class="button-comprar">Cotizar</a>
+                        <a href="https://wa.me/5493417197518" class="button-comprar">Cotizar</a>
                     </div>
                 </div>
             </div>
             
             
         </div>
-        <div class="absolute">
+        <div>
             <!-- seccion del boton -->
-            <div class="white-section sticky">
-                <div class="btn-sombra">
-                    <div class="boton-redondo__item wsp">WSP</div>
-                    <div class="boton-redondo__item gmail">MAIL</div>
+            <div class="white-section">
+                <h3 class= "white-section--titulo title--black">Consultanos</h3>
+                <div class="btn-sombra sticky">
+                    <a href="https://wa.me/5493417197518" class="boton-redondo__item wsp"><img class="btn-sombra__img" src="assets/whatsapp.svg" alt="whatsapp"></a>
+                    <a href="mailto:tomasstevabw@gmail.com" class="boton-redondo__item gmail"><img class="btn-sombra__img" src="assets/gmail.svg" alt="email"></a>
 
                 </div>
             </div>
@@ -292,7 +293,7 @@
                 <div clas="parrafo-encuadrado">
                     <h2 class="title title--white">Páginas a medida</h2>
                     <div class="foto-parrafo">
-                        <img src="assets/landing-icono.png" alt="landing page">
+                        <img src="assets/landing-icono.png" alt="Sitio institucional">
                         <div>
                             <h3 class="servicios__h3">Sitio institucional</h3>
                             <p>
@@ -304,7 +305,7 @@
                 </div>
 
                 <div class="foto-parrafo flex-reverse">
-                    <img src="assets/landing-icono.png" alt="landing page">
+                    <img src="assets/tienda-icono.png" alt="landing page">
                     <div>
                         <h3 class="servicios__h3">Landing Page</h3>
                         <p>
@@ -315,9 +316,9 @@
                 </div>
                 
                 <div class="foto-parrafo">
-                    <img src="assets/tienda-icono.png" alt="landing page">
+                    <img src="assets/catalogo.png" alt="tienda online">
                     <div>
-                        <h3 class="servicios__h3">Tiendas</h3>
+                        <h3 class="servicios__h3">Tienda Online</h3>
                         <p>
                             Mostrá tus productos con estilo. Las <b>Tiendas</b> son una excelente manera de expandir tu negocio de una tienda física a una digital. Tus clientes van a poder comprar o encargar sin moverse de su casa. Podés elegir si terminan la compra desde la página o si deben contactarse con vos para finalizarla.
                         </p>
@@ -330,7 +331,7 @@
                 <h2 class="title title--white">Así mejoramos tu negocio</h2>
 
                 <div class="foto-parrafo">
-                    <img src="assets/behance-icono-redondo.png" alt="landing page">
+                    <img class="foto-parrafo__little" src="assets/code.svg" alt="Programacion">
                     <div>
                         <h3 class="servicios__h3">Programación de Sitios web</h3>
                         <p>
@@ -341,7 +342,7 @@
                 </div>
 
                 <div class="foto-parrafo">
-                    <img src="assets/behance-icono-redondo.png" alt="landing page">
+                    <img class="foto-parrafo__little" src="assets/ux-circle.svg" alt="UX/UI">
                     <div>
                         <h3 class="servicios__h3">Diseño UX/UI</h3>
                         <p>
@@ -352,7 +353,7 @@
                 </div>
 
                 <div class="foto-parrafo">
-                    <img src="assets/behance-icono-redondo.png" alt="landing page">
+                    <img class="foto-parrafo__little" src="assets/chess.svg" alt="Branding">
                     <div>
                         <h3 class="servicios__h3">Completamos o rediseñamos tu identidad de marca</h3>
                         <p>
@@ -363,7 +364,7 @@
                 </div>
 
                 <div class="foto-parrafo">
-                    <img src="assets/behance-icono-redondo.png" alt="landing page">
+                    <img class="foto-parrafo__little" src="assets/google-ads.svg" alt="Ads">
                     <div>
                         <h3 class="servicios__h3">Publicidad en Google Ads y en Meta ads</h3>
                     </div>
@@ -371,7 +372,7 @@
                 </div>
 
                 <div class="foto-parrafo">
-                    <img src="assets/behance-icono-redondo.png" alt="landing page">
+                    <img class="foto-parrafo__little" src="assets/video-library.svg" alt="Motion Graphics">
                     <div>
                         <h3 class="servicios__h3">Destacá con Motion Graphics</h3>
                         <p>
@@ -382,11 +383,33 @@
                 </div>
 
                 <div class="foto-parrafo">
-                    <img src="assets/behance-icono-redondo.png" alt="landing page">
+                    <img class="foto-parrafo__little" src="assets/king.svg" alt="Optimización">
                     <div>
-                        <h3 class="servicios__h3">A medida: HTML, CSS, Javascript</h3>
+                        <h3 class="servicios__h3">Optimización web</h3>
                         <p>
-                            Sitio único hecho a medida para cada cliente. Sin duda la opción más robusta y personalizable.  
+                            ¿Ya tenés un sitio? Lo mejoramos.  
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="foto-parrafo">
+                    <img class="foto-parrafo__little" src="assets/social-media.svg" alt="Redes sociales">
+                    <div>
+                        <h3 class="servicios__h3">Profesionalizamos tus redes sociales</h3>
+                        <p>
+                            Instagram, Facebook, Linkedin, youtube. Desde vestirlas hasta crear un sistema de plantillas que te permita publicar rápido y profesional. 
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="foto-parrafo">
+                    <img class="foto-parrafo__little" src="assets/unique.svg" alt="Diseño gráfico">
+                    <div>
+                        <h3 class="servicios__h3">Diseño Gráfico</h3>
+                        <p>
+                            Redes sociales. Papelería institucional. Banners, flyers, y todo lo relacionado con la comunicación visual de tu negocio. 
                         </p>
                     </div>
                     
@@ -418,11 +441,11 @@
                 <h2 class="title title--aqua" >Lo que puede tener mi página</h2>
                 <div class="componentes">
                     <div class="componentes__item">
-                        <img src="assets/behance-icono-redondo.png" alt="">
-                        <p>mapa de Google</p>
+                        <img src="assets/map.svg" alt="">
+                        <p>Mapa de Google</p>
                     </div>
                     <div class="componentes__item">
-                        <img src="assets/behance-icono-redondo.png" alt="">
+                        <img src="assets/menu-icon.svg" alt="">
                         <p>Menú hamburguesa</p>
                     </div>
                     <div class="componentes__item">
@@ -471,10 +494,10 @@
             <div class="recuadros-corridos">
                 <div class="recuadro__columna recuadro__columna-down">
                     
-                    <div class="recuadro__item-card-container">
+                    <div class="recuadro__item-card-container pointer">
                         <div class="recuadro__item-card">
                             <div class="recuadro__item">
-                                <img  class="recuadro__item-icono" src="assets/mano-estrella-icono.png" alt="certificado ssl">
+                                <img  class="recuadro__item-icono" src="assets/design.svg" alt="certificado ssl">
                                 <h3 class="recuadro__item-titulo">Diseño único</h3>
                             </div>
                             <div class="recuadro__item--info">
@@ -493,10 +516,10 @@
                         <p class="recuadro__item-info">Las páginas sin certificado alertan a cada usuario que son inseguras por lo que reciben menos visitas</p>
                     </div>-->
 
-                    <div class="recuadro__item-card-container">
+                    <div class="recuadro__item-card-container pointer">
                         <div class="recuadro__item-card recuadro__item-card-flip">
                             <div class="recuadro__item">
-                                <img  class="recuadro__item-icono" src="assets/icono-impacto.png" alt="certificado ssl">
+                                <img  class="recuadro__item-icono" src="assets/touchscreen.svg" alt="certificado ssl">
                                 <h3 class="recuadro__item-titulo">Interactivas</h3>
                             </div>
                             <div class="recuadro__item--info">
@@ -507,10 +530,10 @@
                     </div>
                 </div>
                 <div class="recuadro__columna recuadro__columna-up">
-                    <div class="recuadro__item-card-container">
+                    <div class="recuadro__item-card-container pointer">
                         <div class="recuadro__item-card recuadro__item-card-flip">
                             <div class="recuadro__item">
-                                <img  class="recuadro__item-icono" src="assets/grafico.png" alt="certificado ssl">
+                                <img  class="recuadro__item-icono" src="assets/grow.svg" alt="certificado ssl">
                                 <h3 class="recuadro__item-titulo">Escalables</h3>
                             </div>
                             <div class="recuadro__item--info">
@@ -519,15 +542,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="recuadro__item-card-container">
+                    <div class="recuadro__item-card-container pointer">
                         <div class="recuadro__item-card">
                             <div class="recuadro__item">
-                                <img  class="recuadro__item-icono" src="assets/mano-estrella-icono.png" alt="certificado ssl">
-                                <h3 class="recuadro__item-titulo">Profesional</h3>
+                                <img  class="recuadro__item-icono" src="assets/a-medida.svg" alt="certificado ssl">
+                                <h3 class="recuadro__item-titulo">A medida</h3>
                             </div>
                             <div class="recuadro__item--info">
-                                <h3 class="recuadro__item-titulo">Profesional</h3>
-                                <p class="recuadro__item-info">Soluciones profesionales con resultados óptimos para tu emprendimiento</p>
+                                <h3 class="recuadro__item-titulo">A medida</h3>
+                                <p class="recuadro__item-info">Soluciones profesionales con resultados óptimos a la medida de tu emprendimiento</p>
                             </div>
                         </div>
                     </div>
@@ -556,22 +579,28 @@
                 
             </div>
             <div class="contenedor-acordeon">
-                <div class="contenedor-acordeon__item">
+                <div class="contenedor-acordeon__item pointer">
                     <h3 class="contenedor-acordeon__h3">Hacia la optimización</h3>
                     <p>Buscamos el mejor rendimiento posible. Una página lenta pierde leads (posibles clientes) todo el tiempo. </p>
                 </div>
-                <div class="contenedor-acordeon__item">
+                <div class="contenedor-acordeon__item pointer">
                     <h3 class="contenedor-acordeon__h3">Cuidamos tu identidad de marca</h3>
                     <p>Respetamos tu identidad corporativa y la ampliamos en tu página web. Siempre con asesoramiento de por medio.</p>
                 </div>
-                <div class="contenedor-acordeon__item">
+                <div class="contenedor-acordeon__item pointer">
                     <h3 class="contenedor-acordeon__h3">Gestionamos el hosting y dominio</h3>
                     <p>Para que tu página pueda ser visitada debe estar alojada en un servicio de hosting. Y para que pueda ser encontrada debe tener un dominio (el nombre, por ejemplo: www.mipagina.com.ar). Nos encargamos de ayudarte con su compra y te asesoramos.</p>
                 </div>
-                <div class="contenedor-acordeon__item">
+                <div class="contenedor-acordeon__item pointer">
                     <h3 class="contenedor-acordeon__h3">Total transparencia</h3>
                     <p>
                         Te enterás de todo lo que pasa. Somos sinceros y nuestra prioridad N1 sos vos. 
+                    </p>
+                </div>
+                <div class="contenedor-acordeon__item pointer">
+                    <h3 class="contenedor-acordeon__h3">Para todas las pantallas</h3>
+                    <p>
+                        Celulares, tablets, computadores,... Tu página va a adaptarse a cualquier tamaño de pantalla y dispositivo.  
                     </p>
                 </div>
             </div>            
@@ -765,9 +794,10 @@
         </div>
          <!-- seccion del boton -->
          <div class="white-section">
+            <h3 class= "white-section--titulo title--black">Consultanos</h3>
             <div class="btn-sombra">
-                <div class="boton-redondo__item wsp">WSP</div>
-                <div class="boton-redondo__item gmail">MAIL</div>
+                <a href="https://wa.me/5493417197518" class="boton-redondo__item wsp"><img class="btn-sombra__img" src="assets/whatsapp.svg" alt="whatsapp"></a>
+                <a href="mailto:tomasstevabw@gmail.com" class="boton-redondo__item gmail"><img class="btn-sombra__img" src="assets/gmail.svg" alt="email"></a>
 
             </div>
     </div>
