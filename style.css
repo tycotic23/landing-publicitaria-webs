@@ -48,20 +48,7 @@ header{
     width: 100%;
 }
 
-/* .header__banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(assets/nubes-fondo-doble.jpg);
-    background-position-y: 0%;
-    padding: 2rem;
 
-    animation-name: bk-animate;
-  animation-duration: 26s;
-  animation-iteration-count:infinite ;
-  animation-timing-function: linear;
-  background-repeat: repeat-y;
-} */
 
 .header__banner{
     display: grid;
@@ -928,6 +915,28 @@ h1{
     to{
         width: 0%;
     }
+}
+
+.fondo-banner-img{
+    background-image: url(assets/diseno-web-online.jpg);
+    min-height: 60vh;
+    background-position-y: center;
+    background-size: 100% auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.fondo-banner-img>div{
+width: 100%;
+min-height: 100%;
+
+}
+
+.fondo-constructoras{
+    background-image: linear-gradient(-90deg,#7070706e,#bebebeb9),url(assets/constuctoras.jpg);
+    background-position-y: center;
+    background-size: 100% auto;
+    
 }
 
 /*  */
