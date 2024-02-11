@@ -362,6 +362,13 @@ h1{
     justify-content: center;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
 #caracteristicas p,#caracteristicas h2{
     padding: 0rem 1rem;
 }
@@ -429,7 +436,7 @@ h1{
 }
 
 .parrafo-encuadrado{
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
     border: var(--color-main-aqua-green) solid 3px;
     color:black;
     padding: 1rem;
@@ -446,7 +453,7 @@ h1{
 }
 
 .parrafo-con-fondo{
-    margin: 1rem 2rem;
+    /* margin: 1rem 2rem; */
     background-color: var(--color-main-aqua-green);
     color:white;
     padding: 1rem;
@@ -632,8 +639,12 @@ h1{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 3rem 6rem;
+    
     gap:2rem;
+}
+
+.foto-parrafo--space{
+    padding: 3rem 6rem;
 }
 
 .flex-reverse{
@@ -989,6 +1000,10 @@ min-height: 100%;
 
 .foto-parrafo__little{
     height: 80px;
+}
+
+.foto-parrafo__medium{
+    height: 200px;
 }
 
 .white-section--titulo{
