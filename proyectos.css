@@ -1,0 +1,25 @@
+.proyecto-header{
+    background-color: var(--color-main-aqua-green);
+    
+}
+
+.banner-proyecto{
+    width: 100%;
+    text-align: center;
+    padding: 10% 30% 0 30%;
+}
+
+.proyecto-header img{
+    width: 100%;
+
+}
+
+.proyecto-title{
+    font-size: 2.5rem;
+    color: var(--color-main-aqua-green);
+}
+
+main{
+    /* padding: 2rem; */
+}
+
