@@ -15,6 +15,7 @@
     --light-style:white;
     --dark-style:black;
     --bg-nubes:url(assets/nubes-fondo.png);
+    scroll-behavior: smooth;
 }
 
 html{
@@ -27,10 +28,14 @@ p{
     line-height: 1.5;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* header */
 
 .header--index{
-    width: 100%;
+   /*  width: 100%; */
     padding-top: 2rem;
     background-color: var(--dark-style);
     display: flex;
@@ -40,11 +45,13 @@ p{
 
 .header-flex{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .header-flex>img{
-    width: 100%;
+    width: 95%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 
@@ -82,6 +89,16 @@ p{
     justify-content: center;
 }
 
+.banner-green{
+    background-color: var(--color-main-aqua-green);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+
+}
+
 
 
 .header__p{
@@ -90,7 +107,7 @@ p{
 }
 
 .header__h2{
-    width: 100%;
+    /* width: 100%; */
     border-top:solid 1px gray;
     border-bottom:solid 1px var(--color-main-aqua-green);
     background-color: var(--dark-style);
@@ -103,21 +120,21 @@ p{
     color:var(--color-main-aqua-green);
     font-weight: 400;
 
-   /*  animation-name: alternarbn;
+    animation-name: alternarbn;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
+    animation-timing-function: ease-in-out;
 }
 
 
-/* @keyframes alternarbn {
+@keyframes alternarbn {
     0%,40%,100%{
         color:var(--color-main-aqua-green);
     }
     50%,90%{
         color:white;
     }
-} */
+}
 
 .flex-h{
     display: flex;
@@ -160,7 +177,9 @@ p{
     
     /* display: flex; */
     padding: 3rem;
-    width: 100%;
+    /* width: 100%; */
+    flex-grow: 1;
+    flex-shrink: 1;
    /*  justify-content: flex-start;
     gap:50px; */
 }
@@ -218,11 +237,11 @@ span{
     overflow: hidden;
     white-space: nowrap;
     border-right: solid 4px #fff;
-    /* animation: escribir 4s linear infinite; */
+    animation: escribir 3s linear infinite;
     max-width: max-content;
 }
 
-/* @keyframes escribir {
+@keyframes escribir {
     0%,10%,100%{
         width: 0;
 
@@ -230,7 +249,7 @@ span{
     70%,90%{
         width: 100%;
     }
-} */
+}
 
 .title{
     font-size:3rem;
@@ -245,7 +264,7 @@ span{
     text-align: center;
     font-weight: 600;
     padding: 1rem;
-    
+    padding-top: 2rem;
 }
 
 .title--aqua{
@@ -281,6 +300,9 @@ span{
     gap:2rem;
 }
 
+.icono-grande{
+    width: 300px;
+}
 
 .mini-footer{
     border-top: var(--color-main-aqua-green) solid 1px;
@@ -307,7 +329,6 @@ span{
 }
 
 .parrafo-claro p{
-    text-align: justify;
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -496,9 +517,9 @@ span{
 
 .fondo-banner-img{
     background-image: url(assets/diseno-web-online.jpg);
-    min-height: 60vh;
+    min-height: 400px;
     background-position-y: center;
-    background-size: 100% auto;
+    background-size: cover;
     display: flex;
     align-items: stretch;
 }
@@ -508,6 +529,10 @@ span{
 width: 100%;
 min-height: 100%;
 
+}
+
+.banner-img{
+    max-width: 80%;
 }
 
 .banner-constructoras{
@@ -531,7 +556,7 @@ min-height: 100%;
 }
 
 .proyectos-construccion img{
-    width: 300px;
+    
     height: 225px;
     object-fit: cover;
 }
@@ -577,20 +602,21 @@ min-height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     grid-template-rows: repeat(auto-fill,minmax(300px,1fr));
-    grid-auto-rows: 300px;
-    grid-auto-columns: 400px;
-    gap:1rem;
+    gap:2rem;
     align-items: center;
     justify-items: center;
     text-align: center;
     align-content: space-between;
 }
 
-.proyectos img{
+.proyectos__img img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
+
+/* .proyectos__img {
+    height: 100%;
+} */
 
 /* seccion del boton */
 
@@ -790,7 +816,7 @@ nav{
     list-style: none;
     display: flex;
     gap:1.5em;
-    font-size: 2.5vh;
+    font-size: 1.2rem;
     flex-wrap: wrap;
 }
 
@@ -1083,10 +1109,6 @@ nav{
 
 @media screen and (max-width: 1200px){
 
-    /* #head{
-        min-height: 60vh;
-    } */
-
     .foto-parrafo--big{
         flex-direction: column;
         align-items: center;
@@ -1096,13 +1118,36 @@ nav{
         flex-direction: column;
     }
 
-    /* #head {
-        min-height: auto;
-    } */
-
     .header-flex img{
         width: 60%;
         align-self: flex-end;
+    }
+
+    .servicios__packs{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:2rem;
+        align-items: end;
+        padding: 3rem;
+        min-height: 90vh;
+        text-align: left;
+    }
+
+    .servicios__item:nth-child(2){
+        grid-row: auto;
+        grid-column-start: auto;
+    }
+    
+    .servicios__item:nth-child(1),.servicios__item:nth-child(3){
+        grid-row-start: auto;
+    }
+
+    .servicios__item{
+       max-width:400px;
+    }
+
+    .sabias>div {
+        padding: 3rem;
     }
 
 }
@@ -1168,6 +1213,18 @@ nav{
     }
 }
 
+@media screen and (max-width: 1000px){
+    
+
+    .foto-parrafo--space {
+        padding: 1rem;
+    }
+
+    .foto-parrafo img {
+        max-height: 30vh;
+    }
+}
+
 
 @media screen and (max-width: 900px){
 
@@ -1178,12 +1235,54 @@ nav{
     .visible-nav>div:first-child{
         padding: 1rem;
     }
+
+    .foto-parrafo,.flex-reverse {
+        flex-direction: column;
+    }
+
+    .foto-parrafo--start {
+        align-items: flex-start;
+    }
+
+    .foto-parrafo--space--beneficios {
+        padding: 3rem;
+    }
 }
 
 
 
 @media screen and (max-width: 750px){
+    .logo-grande {
+        width: 400px;
+    }
 
+    .foto-parrafo__big {
+        height: 200px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .parrafo-claro {
+        padding: 1rem;
+    }
+
+    #contactos h2 strong {
+        font-size: 3rem;
+    }
+
+    .logo-banner{
+        max-width: 200px;
+    }
+
+    .header__banner p{
+        font-size: 1.5rem;
+    }
+
+    .title--banner {
+        font-size: 2rem;
+    }
 
 }
 
@@ -1196,6 +1295,28 @@ nav{
     #contactos .firma{
         align-self: center;
     }
+
+    .recuadros-corridos {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+
+    .recuadro__columna {
+        padding: 0;
+    }
+
+    .componentes {
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+        column-gap: 10px;
+        row-gap: 40px;
+        grid-template-rows: repeat(auto-fill,minmax(100px,1fr));
+    }
+
+    .firma {
+        padding: 0;
+    }
 }
 
 
@@ -1205,9 +1326,30 @@ nav{
     #contactos h2{
         font-size: 2rem;
     }
+
+    .contenedor-acordeon__h3{
+        font-size: 1.2rem;
+    }
+
+    #contactos h2 strong {
+        font-size: 1.5rem;
+    }
+
+    .logo-banner{
+        max-width: 150px;
+    }
+
+    .header__banner p{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px){
+
+    .button {
+        font-size: 0.7rem;
+    }
+
     #contactos h3{
         font-size: 1.5rem;
     }
@@ -1216,8 +1358,18 @@ nav{
         font-size: 1.5rem;
     }
 
-    p{
-        font-size: 1rem !important;
+    p,.header__p,.parrafo-claro p,.contenedor-acordeon__item.active p{
+        font-size: 1rem;
+    }
+
+    .boton-redondo__or {
+        width: 25px;
+        height: 25px;
+    }
+
+    .boton-redondo>p {
+        padding: 0 0.5rem;
+        font-size: 0.8rem;
     }
 
     .parrafo-claro h2{
@@ -1237,6 +1389,38 @@ nav{
     .firma img{
         width: 2rem;
     }
+
+    .logo-grande {
+        width: 200px;
+    }
+
+    .btn-sombra {
+        width: 300px;
+    }
+
+    .fondo-banner-img {
+        min-height: 250px;
+    }
+
+    .icono-grande {
+        width: 200px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .foto-parrafo--space--beneficios img {
+        max-width: 200px;
+    }
+
+    .logo-banner{
+        max-width: 100px;
+    }
+
+    .servicios__packs {
+        padding: 1rem;
+    }
 }
 
 
@@ -1254,17 +1438,214 @@ nav{
         max-width: 100%;
         min-width: 70%;
     }
+
+    .proyectos {
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+
+    .title--banner {
+        font-size: 1.2rem;
+    }
+
+    .header__h2 h2 {
+        font-size: 2rem;
+    }
+
+    .btn-sombra {
+        width: 200px;
+    }
+
+    .btn-sombra__img {
+        width: 1rem;
+    }
+
+    .btn-sombra {
+        padding: 5px;
+        top: 20px;
+        height: 40px;
+    }
+
+    .componentes{
+        padding: 0;
+    }
+
+    .servicios__h3 {
+        font-size: 1rem;
+    }
+
+    p,.header__p,.parrafo-claro p,.contenedor-acordeon__item.active p,#contactos p{
+        font-size: 0.9rem;
+    }
+
+    .logo-banner {
+        max-width: 70px;
+    }
+
+    .header__banner p {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 350px){
+
+    
     
     #contactos h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     #contactos h3{
         padding-top: 1rem;
         font-size: 1rem;
+    }
+
+    p,.header__p,.parrafo-claro p,.contenedor-acordeon__item.active p{
+        font-size: 0.7rem;
+    }
+
+    .foto-parrafo__big {
+        height: 150px;
+    }
+
+    .servicios__item ul {
+        font-size: 0.6rem;
+        list-style: url(assets/lista-flecha-p.png) square;
+    }
+
+    .button-comprar {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .header-flex .header__img {
+        width: 80%;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .componentes__item img {
+        max-width: 60px;
+    }
+
+    .foto-parrafo__little {
+        max-height: 3rem;
+    }
+
+    .boton-redondo__or {
+        width: 15px;
+        height: 15px;
+    }
+
+    .boton-redondo>p{
+        font-size: 0.6rem;
+    }
+
+    .recuadro__item-card-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .recuadro__item-titulo {
+        font-size: 1.2rem;
+    }
+
+    .recuadro__item-icono {
+        max-height: 3rem;
+    }
+
+    .recuadro__item--info{
+        padding: 1rem;
+    }
+
+    .foto-parrafo--space--beneficios img {
+        max-width: 150px;
+    }
+
+    .contenedor-acordeon {
+        padding: 1rem;
+    }
+
+    .contenedor-acordeon__h3::after {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .contenedor-acordeon__h3 {
+        font-size: 0.8rem;
+    }
+
+    .header__banner p {
+        font-size: 0.6rem;
+    }
+
+    #head {
+        padding: 1rem;
+    }
+
+    .icono-grande {
+        width: 150px;
+    }
+
+    .sabias>div {
+        padding: 1rem;
+    }
+
+    .boton-redondo {
+        border: solid 3px var(--color-main-aqua-green);
+    }
+
+    .parrafo-encuadrado h2 {
+        font-size: 1.2rem;
+    }
+
+    .header-flex img {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 250px){
+    .logo-grande {
+        width: 100px;
+    }
+
+    .parrafo-con-fondo h2 {
+        font-size: 1rem;
+    }
+
+    .proyectos{
+        grid-template-rows: repeat(auto-fill,minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        gap:1rem;
+    }
+
+    .foto-parrafo__big {
+        height: 100px;
+    }
+
+    .servicios__h3 {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .componentes {
+        grid-template-rows: repeat(auto-fill,minmax(70px,1fr));
+    }
+
+    .contenedor-acordeon__h3 {
+        font-size: 0.6rem;
+    }
+
+    p, .header__p, .parrafo-claro p, .contenedor-acordeon__item.active p {
+        font-size: 0.6rem;
     }
 }
 
