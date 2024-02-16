@@ -32,10 +32,19 @@ p{
     text-align: center;
 }
 
+.banner-title{
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
 /* header */
 
 .header--index{
-   /*  width: 100%; */
     padding-top: 2rem;
     background-color: var(--dark-style);
     display: flex;
@@ -45,11 +54,11 @@ p{
 
 .header-flex{
     display: flex;
-    /* width: 100%; */
 }
 
-.header-flex>img{
+.header-flex .header__img{
     width: 95%;
+    max-width: 600px;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -516,12 +525,29 @@ span{
 /*  */
 
 .fondo-banner-img{
-    background-image: url(assets/diseno-web-online.jpg);
     min-height: 400px;
-    background-position-y: center;
+   
     background-size: cover;
-    display: flex;
-    align-items: stretch;
+}
+
+.bg-diseno-web{
+    background-image: url(assets/diseno-web-online.jpg);
+    background-position-y: center;
+}
+
+.bg-diseno-pantallas{
+    background-image: url(assets/banner-fondo-responsive-pantallas.jpg);
+    background-position-y: bottom;
+}
+
+.bg-pc-html{
+    background-image: url(assets/concepto-estrategia-planificacion-estrategia-marketing.jpg);
+    background-position-y: center;
+}
+
+.bg-banner-html{
+    background-image: url(assets/sistema-html-concepto-sitios-web.jpg);
+    background-position-y: center;
 }
 
 
@@ -646,6 +672,18 @@ min-height: 100%;
     text-align: center;
     position: relative;
     top: 20px;
+}
+.boton-ver{
+    border: solid 4px var(--color-main-aqua-green);
+    border-radius: 100px;
+    padding: .5rem 1rem;
+   text-decoration: none;
+   color:var(--color-main-aqua-green);
+   font-size: 1.5rem;
+}
+
+.boton-ver:hover{
+    background-color: aquamarine;
 }
 
 .boton-redondo__item{
@@ -1118,7 +1156,7 @@ nav{
         flex-direction: column;
     }
 
-    .header-flex img{
+    .header-flex .header__img{
         width: 60%;
         align-self: flex-end;
     }
@@ -1603,7 +1641,7 @@ nav{
         font-size: 1.2rem;
     }
 
-    .header-flex img {
+    .header-flex .header__img {
         width: 40%;
     }
 }
