@@ -8,13 +8,94 @@
 
 .h1-cv{
     text-align: center;
-    font-size: clamp(1rem, 4vw, 3rem);;
+    font-size: clamp(1rem, 4vw, 3rem);
 }
 
 .header__cv{
     display: grid;
     align-items: center;
-    min-height: 300px;
+    min-height: 270px;
    
     background-size: cover;
+}
+
+.nav-cv{
+    background-color: var(--dark-style);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.firma-cv{
+    flex-grow: 1;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-cv ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-grow: 3;
+    align-items: baseline;
+}
+
+.nav-cv ul a{
+    color:white;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.nav-cv ul a:hover{
+    color:var(--color-main-aqua-green)
+}
+
+
+
+.black-section{
+    background-color: var(--dark-style);
+    color:white;
+    width: 100%;
+}
+
+section{
+    width: 100%;
+}
+
+#contratar{
+    
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contratar h2{
+    font-size: 3rem;
+    color: var(--color-main-aqua-green);
+    font-weight: 400;
+}
+
+#contratar h2 strong{
+    font-size: 4rem;
+}
+
+
+
+#contratar h3{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+#contratar p{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#contratar a{
+    text-decoration: none;
+    color: black;
 }
