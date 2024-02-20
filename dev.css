@@ -1,0 +1,20 @@
+.section{
+    max-width: 1000px;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.h1-cv{
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 3rem);;
+}
+
+.header__cv{
+    display: grid;
+    align-items: center;
+    min-height: 300px;
+   
+    background-size: cover;
+}

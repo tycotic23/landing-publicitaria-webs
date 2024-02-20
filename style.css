@@ -14,7 +14,7 @@
     --color-main-aqua-green-filter:#22b573c0;
     --light-style:white;
     --dark-style:black;
-    --bg-nubes:url(assets/nubes-fondo.png);
+    --bg-nubes:url(assets/nubes-fondo-compressed.jpg);
     scroll-behavior: smooth;
 }
 
