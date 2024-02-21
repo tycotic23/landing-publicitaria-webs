@@ -231,11 +231,74 @@ a{
 
 }
 
-.proyecto-li .proyecto__title{
+.proyecto-li button{
+    background-color: var(--color-main-aqua-green);
+    border-radius: 150px;
+    padding: 0.5rem 1rem ;
+    color:white;    
+    border: white solid 1px;
 
-    position: absolute;
-    bottom:1rem;
-    left:1rem;
+}
+
+.proyecto-li button:hover{
+    background-color: var(--color-main-aqua-green-light);
+    cursor: pointer;
+}
+
+.proyecto__title{
+
+    
     text-align: left;
     color:white;
+}
+
+.proyecto__title--green{
+    text-align: left;
+    color:var(--color-main-aqua-green);
+}
+
+.proyecto__info{
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding: 1rem;
+    background-color: var(--color-main-aqua-green-filter);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    mask: url(assets/cv/recorte-inv-01.svg);
+    mask-size: cover;
+    mask-position: bottom right;
+}
+
+.ocultar-proyecto{
+    display:none;
+}
+
+.proyecto-vista{
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow-y: auto;
+}
+
+.proyecto__cerrar{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.proyecto-vista__botonera{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hidden-body{
+    overflow: hidden;
 }
