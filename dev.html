@@ -13,6 +13,12 @@
     <header id="inicio">
         <div class=" bg-filter-nubes header__cv">
             <h1 class="h1-cv">< Tomas Stevan Balanda Wagner/><br><span>Desarrollador Web Full Stack</span></h1>
+            <div class="header__buttons">
+                            
+                <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/">Linkedin</a>
+                <a href="https://github.com/tycotic23">Github</a>
+                
+            </div>
         </div>
     </header>
 
@@ -40,7 +46,7 @@
     <main class="cv-main">
         <div class="separar">
             <div class="section">
-                <img class="foto-perfil" width="200px" src="assets/cv/foto-perfil.jpg" alt="">
+                <img class="foto-perfil" src="assets/cv/foto-perfil.jpg" alt="">
                 <h2 class="h2-cv">¿Quién soy?</h2>
                 <p>Soy desarrollador full stack, actualmente me dedico a crear páginas web para empresas y emprendimientos. Estoy en búsqueda de nuevas oportunidades laborales para hacer mis primeras armas en el mundo IT. </p>
                 <p><br>Considero que es una profesión de formación constante por lo que siempre voy a estar estudiando. Actuamente me estoy capacitando en Spring y en Angular. </p>
@@ -49,7 +55,7 @@
                 
                 
             </div>
-            <div>
+            <div class="section-contactos_container">
                 <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/"><b>Conectemos: </b>Linkedin</a>
                 <div class="section-contactos">
                     
@@ -71,14 +77,14 @@
         <section id="habilidades" class="black-section bottom-green">
             <h2 class="h2-cv">Conocimientos</h2>
             <ul class="tecnologias-lista">
-                <li><img class="ico-little" src="assets/cv/html5.png" alt=""> HTML5</li>
-                <li><img class="ico-little" src="assets/cv/css3.png" alt=""> CSS3</li>
-                <li><img class="ico-little" src="assets/cv/js.png" alt=""> Javascript</li>
-                <li><img class="ico-little" src="assets/cv/java.png" alt=""> Java</li>
-                <li><img class="ico-little" src="assets/cv/spring.png" alt=""> Spring</li>
-                <li><img class="ico-little" src="assets/cv/angular.png" alt=""> Angular</li>
-                <li><img class="ico-little" src="assets/cv/vue.png" alt=""> Vue</li>
-                <li><img class="ico-little" src="assets/cv/sql.png" alt=""> SQL</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/html5.png" alt=""> HTML5</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/css3.png" alt=""> CSS3</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/js.png" alt=""> Javascript</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/java.png" alt=""> Java</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/spring.png" alt=""> Spring</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/angular.png" alt=""> Angular</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/vue.png" alt=""> Vue</li>
+                <li><img class="ico-little anim-ico" src="assets/cv/sql.png" alt=""> SQL</li>
             </ul>
         </section>
         <div class="bg-filter-nubes section-container">
@@ -136,84 +142,174 @@
         <div class="ver-proyectos">
             <!-- proyecto 1 -->
             <div class="proyecto-vista ocultar-proyecto">
-                <div class="proyecto-vista__botonera">
-                    <img class="proyecto__cerrar" src="assets/cv/close-bold.svg" alt="cerrar">
+                <div class="proyecto-vista__contenido">
+                    <div class="proyecto-vista__botonera">
+                        <img class="proyecto__cerrar" src="assets/cv/close-bold.svg" alt="cerrar">
+                    </div>
+                    
+                    <section>
+                        <img class="proyecto-vista__img" src="assets/cv/proyecto-bank.jpg" alt="Homebanking">
+                        <div class="proyecto__buttons">
+                            
+                            <img class="ico-mini anim-ico" src="assets/cv/vue.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/spring.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/html5.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/css3.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/java.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/postgresql.svg" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/js.png" alt="">
+                            
+                        </div>
+                        
+                        <div class="proyecto__buttons">
+                            
+                            <a class="button" href="https://apmindhub10tt-5s2k.onrender.com/web/index.html">Ver proyecto</a>
+                            <a class="button" href="https://github.com/tycotic23/MindHub-bank_Tomas-Balanda">Repositorio</a>
+                            
+                        </div>
+                        <h3 class="proyecto__title--green">Homebanking - MindHub Brothers</h3>
+                        <p>
+                            Proyecto final de Bootcamp de Java. 
+                        </p>
+                        <ul class="pading-left">
+                            <li>Backend desarrollado con spring boot</li>
+                            <li>Frontend desarrollado con vue</li>
+                            <li>Base de datos postgreSQL</li>
+                        </ul>
+                        <p>Cuenta con una base de datos donde se almacenan los usuarios, las tarjetas, cuentas y préstamos. Verifica los datos para que un usuario no pueda ver ni acceder a cuentas de otros. 
+                            Todos los datos de entrada están validados desde el backend. 
+                        </p>
+                        <p>Para entrar crear un usuario nuevo o usar mirta@mindhub.com con clave tito
+                            Es un homebanking. Permite crear usuarios nuevos, crear hasta 3 cuentas y eliminarlas, pedir y borrar tarjetas y tomar préstamos.</p>
+                    </section>
                 </div>
                 
-                <section>
-                    <img class="proyecto-vista__img" src="assets/cv/proyecto-bank.jpg" alt="Homebanking">
-                    <h3 class="proyecto__title--green">Homebanking - MindHub Brothers</h3>
-                    <p>
-                        asdas asd asd asd asd 
-                    </p>
-                    <div class="proyecto__buttons">
-                        
-                        <a href="">Ver proyecto</a>
-                        <a href="">Repositorio</a>
-                        
-                    </div>
-                </section>
             </div>
             <!-- proyecto 2 -->
             <div class="proyecto-vista ocultar-proyecto">
-                <div class="proyecto-vista__botonera">
-                    <img class="proyecto__cerrar" src="assets/cv/close-bold.svg" alt="cerrar">
+                <div class="proyecto-vista__contenido">
+                    <div class="proyecto-vista__botonera">
+                        <img class="proyecto__cerrar" src="assets/cv/close-bold.svg" alt="cerrar">
+                    </div>
+
+                    
+                    <section>
+                        <img class="proyecto-vista__img" src="assets/cv/proyecto-mindhub.jpg" alt="Amazing Events">
+                        <div class="proyecto__buttons">
+                            
+                            <img class="ico-mini anim-ico" src="assets/cv/html5.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/css3.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/js.png" alt="">
+                            
+                        </div>
+                        <div class="proyecto__buttons">
+                            
+                            <a class="button" href="https://tycotic23.github.io/AmazingEvents_Tomas-Balanda/">Ver proyecto</a>
+                            <a class="button" href="https://github.com/tycotic23/AmazingEvents_Tomas-Balanda">Repositorio</a>
+                            
+                        </div>
+                        <h3 class="proyecto__title--green">Amazing Events</h3>
+                        <p>
+                            Proyecto realizado como parte del bootcamp de Frontend de MindHub. HTML, CSS y Javascript. 
+                            Se trata de una página de eventos que son obtenidos a través de una API. Luego son filtrados, tiene la posibilidad de usar un buscador de eventos.
+                        </p>
+                    </section>
                 </div>
                 
-                <section>
-                    <img class="proyecto-vista__img" src="assets/cv/proyecto-mindhub.jpg" alt="Amazing Events">
-                    <h3 class="proyecto__title--green">Amazing Events</h3>
-                    <p>
-                        asdas asd asd asd asd 
-                    </p>
-                    <div class="proyecto__buttons">
-                        
-                        <a href="">Ver proyecto</a>
-                        <a href="">Repositorio</a>
-                        
-                    </div>
-                </section>
             </div>
             <!-- proyecto 3 -->
             <div class="proyecto-vista ocultar-proyecto">
-                <div class="proyecto-vista__botonera">
-                    <img class="proyecto__cerrar" src="assets/cv/close-bold.svg" alt="cerrar">
+                <div class="proyecto-vista__contenido">
+                    <div class="proyecto-vista__botonera">
+                        <img class="proyecto__cerrar" src="assets/cv/close-bold.svg" alt="cerrar">
+                    </div>
+                    
+                    <section>
+                        <img class="proyecto-vista__img" src="assets/cv/proyecto-cepma.jpg" alt="CEPMA">
+                        <div class="proyecto__buttons">
+                            
+                            <img class="ico-mini anim-ico" src="assets/cv/html5.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/css3.png" alt="">
+                            <img class="ico-mini anim-ico" src="assets/cv/js.png" alt="">
+                            
+                        </div>
+                        
+                        <div class="proyecto__buttons">
+                            
+                            <a class="button" href="https://tycotic23.github.io/CEPMA-Paracaidismo---Web-institucional/">Ver proyecto</a>
+                            <a class="button" href="https://github.com/tycotic23/CEPMA-Paracaidismo---Web-institucional">Repositorio</a>
+                            
+                        </div>
+                        <h3 class="proyecto__title--green">CEPMA - Web Institucional</h3>
+                        <p>
+                            Proyecto realizado por un cliente que buscaba una página institucional para promocionar su escuela de paracaidismo. Se utilizó HTML, CSS y Javascript. 
+                            Es una clásica página institucional con información, algunas secciones están animadas para darle mayor dinamismo. 
+                            Adaptable a pantallas de diferentes tamaños. Tiene un menú hamburguesa. Scroll suave. 
+                        </p>
+                    </section>
                 </div>
                 
-                <section>
-                    <img class="proyecto-vista__img" src="assets/cv/proyecto-cepma.jpg" alt="CEPMA">
-                    <h3 class="proyecto__title--green">CEPMA - Web Institucional</h3>
-                    <p>
-                        asdas asd asd asd asd 
-                    </p>
-                    <div class="proyecto__buttons">
-                        
-                        <a href="">Ver proyecto</a>
-                        <a href="">Repositorio</a>
-                        
-                    </div>
-                </section>
             </div>
         </div>
         
         
-
-        <section id="formacion">
-            <h2 class="h2-cv">Formación</h2>
-            <p>Mi formación comienza con .....</p>
-        </section>
+        <div class="parrafo-doble">
+            <section class="lista-formacion" id="formacion">
+                <h2 class="h2-cv">Formación</h2>
+                <ul class="lista-formacion__ul">
+                    <li>
+                        <h3>Facultad de Ciencias Exactas de
+                            la Universidad Nacional de Rosario</h3>
+                        <p><span>2017-2019</span></p>
+                        <p>Licenciatura en ciencias de la
+                            computación</p>
+                    </li>
+                    <li>
+                        <h3> Universidad Tecnológica Nacional</h3>
+                        <p><span>2015-2016</span></p>
+                        <p>Ingeniería en sistemas</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="lista-formacion">
+                <h2 class="h2-cv">otros cursos</h2>
+                <ul class="lista-formacion__ul">
+                    <li>
+                        <h3>Bootcamp Desarrollador Backend Java</h3>
+                        <p><span>sep 2023- oct 2023</span></p>
+                        <p>Universidad Tecnológica Nacional</p>
+                    </li>
+                    <li>
+                        <h3>Bootcamp intensivo Desarrollador Backend Java</h3>
+                        <p><span>Ago 2023 - Sep 2023</span></p>
+                        <p>MindHub</p>
+                    </li>
+                    <li>
+                        <h3>Bootcamp intensivo Desarrollador Frontend</h3>
+                        <p><span>Feb 2023 - Abr 2023</span></p>
+                        <p>MindHub</p>
+                    </li>
+                    <li>
+                        <h3>Desarrollador Full Stack</h3>
+                        <p><span>Mar 2022 - Ene 2023</span></p>
+                        <p>Argentina Programa 3.0 y 4.0</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
     </main>
 
-    <footer>
-        <div id="contratar" class="flex-column-center">
+    <footer class="bg-filter-nubes ">
+        <div id="contratar" class="footer-cv">
             <h2>Trabajemos juntos</h2>
             <div class="section-contactos">
-                <a>
+                <a href="https://wa.me/5493417197518">
                     <img width="25px" src="assets/whatsapp.svg" alt=""> 
                     +54 9 341 7197518
                 </a>
     
-                <a>
+                <a href="mailto:tomasstevabw@gmail.com">
                     <img width="25px" src="assets/gmail.svg" alt=""> 
                     tommasstevanbw@gmail.com
                 </a>
