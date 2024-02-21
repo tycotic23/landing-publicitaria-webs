@@ -37,67 +37,100 @@
         
     </nav>
 
-    <main class="parrafo-claro column">
-        <div class="foto-parrafo section">
-            <img width="200px" src="assets/cv/foto-perfil.jpg" alt="">
-            <section>
-                <h2>¿Quién soy?</h2>
-                <p>asdas asd adas d</p>
-                <a href="">Linkedin</a>
-                <p><b>Ubicación:</b> Rosario, Santa Fe, Argentina</p>
+    <main class="cv-main">
+        <div class="separar">
+            <div class="section">
+                <img class="foto-perfil" width="200px" src="assets/cv/foto-perfil.jpg" alt="">
+                <h2 class="h2-cv">¿Quién soy?</h2>
+                <p>Soy desarrollador full stack, actualmente me dedico a crear páginas web para empresas y emprendimientos. Estoy en búsqueda de nuevas oportunidades laborales para hacer mis primeras armas en el mundo IT. </p>
+                <p><br>Considero que es una profesión de formación constante por lo que siempre voy a estar estudiando. Actuamente me estoy capacitando en Spring y en Angular. </p>
+                <p>Me destaco por mi creatividad, curiosidad y sinceridad.</p>
+                <p><br></p>
                 
-            </section>
-            
+                
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/tom%C3%A1s-stevan-balanda-wagner-0b313125a/"><b>Conectemos: </b>Linkedin</a>
+                <div class="section-contactos">
+                    
+                    <p><b>Ubicación:</b> Rosario, Santa Fe, Argentina</p>
+                    <a href="https://wa.me/5493417197518" class="inline">
+                        <img width="25px" src="assets/cv/whatsapp.svg" alt=""> 
+                        +54 9 341 7197518
+                    </a>
+        
+                    <a href="mailto:tomasstevabw@gmail.com" class="inline">
+                        <img width="25px" src="assets/cv/google-gmail.svg" alt=""> 
+                        tommasstevanbw@gmail.com
+                    </a>
+                </div>
+            </div>
             
         </div>
-        <hr>
-        <div class="section-contactos">
-            <a>
-                <img width="25px" src="assets/whatsapp.svg" alt=""> 
-                +54 9 341 7197518
-            </a>
 
-            <a>
-                <img width="25px" src="assets/gmail.svg" alt=""> 
-                tommasstevanbw@gmail.com
-            </a>
-            
-        </div>
-
-        <section id="habilidades" class="black-section">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>Java</li>
-                <li>Spring</li>
-                <li>Angular</li>
-                <li>Vue</li>
-            </ul>
-
-            <h2>Habilidades blandas</h2>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Comunicador</li>
-                <li>Adaptable</li>
-                <li>Creativo</li>
-                <li>Flexible</li>
-                <li>Colaborador</li>
+        <section id="habilidades" class="black-section bottom-green">
+            <h2 class="h2-cv">Conocimientos</h2>
+            <ul class="tecnologias-lista">
+                <li><img class="ico-little" src="assets/cv/html5.png" alt=""> HTML5</li>
+                <li><img class="ico-little" src="assets/cv/css3.png" alt=""> CSS3</li>
+                <li><img class="ico-little" src="assets/cv/js.png" alt=""> Javascript</li>
+                <li><img class="ico-little" src="assets/cv/java.png" alt=""> Java</li>
+                <li><img class="ico-little" src="assets/cv/spring.png" alt=""> Spring</li>
+                <li><img class="ico-little" src="assets/cv/angular.png" alt=""> Angular</li>
+                <li><img class="ico-little" src="assets/cv/vue.png" alt=""> Vue</li>
+                <li><img class="ico-little" src="assets/cv/sql.png" alt=""> SQL</li>
             </ul>
         </section>
+        <div class="bg-filter-nubes section-container">
+            <section id="habilidades" class="black-section masked-section">
+                <h2 class="h2-cv">Habilidades blandas</h2>
+                <ul class="lista">
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicador</li>
+                    <li>Adaptable</li>
+                    <li>Creativo</li>
+                    <li>Flexible</li>
+                    <li>Colaborador</li>
+                </ul>
+            </section>
+        </div>
 
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <ul>
-                <li>Eventos</li>
-                <li>Banco</li>
-                <li>Paracaidismo institucional</li>
+        
+
+        <section id="proyectos" class="proyectos-lista-container">
+            <h2 class="h2-cv">Proyectos</h2>
+            <ul class="proyectos-lista">
+                <li class="proyecto-li">
+                    <img src="assets/cv/proyecto-bank.jpg" alt="Homebanking">
+                    <h3 class="proyecto__title">Homebanking - MindHub Brothers</h3>
+                    <div class="proyecto__button">
+                        <button>Ampliar</button>
+                    </div>
+                </li>
+
+                <li class="proyecto-li">
+                    <img src="assets/cv/proyecto-mindhub.jpg" alt="Homebanking">
+                    <h3 class="proyecto__title">Amazing Events</h3>
+                    <div class="proyecto__button">
+                        <button>Ampliar</button>
+                    </div>
+                </li>
+
+                <li class="proyecto-li">
+                    <img src="assets/cv/proyecto-cepma.jpg" alt="Homebanking">
+                    <h3 class="proyecto__title">CEPMA - Web Institucional</h3>
+                    <div class="proyecto__button">
+                        <button>Ampliar</button>
+                    </div>
+                </li>
+                <!-- <li><a class="proyectos__img" href="proyecto-pagina-institucional-cepma-paracaidismo.html"><img src="assets/paginas-web-cepma-portada.jpg" alt="pagina institucional CEPMA paracaidismo"></a></li>
+                <li><a class="proyectos__img" href="proyecto-pagina-institucional-cepma-paracaidismo.html"><img src="assets/paginas-web-cepma-portada.jpg" alt="pagina institucional CEPMA paracaidismo"></a></li>
+                <li><a class="proyectos__img" href="proyecto-pagina-institucional-cepma-paracaidismo.html"><img src="assets/paginas-web-cepma-portada.jpg" alt="pagina institucional CEPMA paracaidismo"></a></li> -->
             </ul>
         </section>
 
         <section id="formacion">
-            <h2>Formación</h2>
+            <h2 class="h2-cv">Formación</h2>
             <p>Mi formación comienza con .....</p>
         </section>
     </main>

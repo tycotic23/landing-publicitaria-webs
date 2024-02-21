@@ -70,14 +70,19 @@ main{
 
 
 h1{
-    font-size:3rem;
+    font-size:clamp(1rem, 4vw, 3rem);
     text-align: center;
     font-weight: 600;
 }
 
 
 
+@media screen and (max-width: 750px){
 
+    .banner-proyecto{
+        padding: 20% 30% 0 30%;
+    }
+}
 
 
 
