@@ -72,7 +72,7 @@ p{
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 1fr 1fr;
     font-size: 2rem;
-    background-image: linear-gradient(var(--color-main-aqua-green-filter),var(--color-main-aqua-green-filter)),url(assets/nubes-fondo-doble.jpg);
+    background-image: linear-gradient(var(--color-main-aqua-green-filter),var(--color-main-aqua-green-filter)),url(assets/nubes-fondo-compressed.jpg);
     padding: 2rem;
 }
 
@@ -642,11 +642,13 @@ min-height: 100%;
 .proyectos__img img{
     width: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* .proyectos__img {
-    height: 100%;
-} */
+.proyectos__img img:hover{
+    filter: brightness(60%);
+    transform: translateY(-20px);
+}
 
 /* seccion del boton */
 
@@ -1467,6 +1469,12 @@ footer{
     .servicios__packs {
         padding: 1rem;
     }
+
+    .componentes{
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
 }
 
 
@@ -1530,6 +1538,12 @@ footer{
     .header__banner p {
         font-size: 0.8rem;
     }
+
+    
+
+    .componentes__item img {
+        max-width: 60px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -1570,9 +1584,6 @@ footer{
 }
 
 @media screen and (max-width: 300px){
-    .componentes__item img {
-        max-width: 60px;
-    }
 
     .foto-parrafo__little {
         max-height: 3rem;
@@ -1616,15 +1627,6 @@ footer{
         padding: 1rem;
     }
 
-    /* .contenedor-acordeon__h3::after {
-        width: 1rem;
-        height: 1rem;
-    } */
-
-    /* .contenedor-acordeon__h3 {
-        font-size: 0.8rem;
-    } */
-
     .header__banner p {
         font-size: 0.6rem;
     }
@@ -1651,6 +1653,15 @@ footer{
 
     .header-flex .header__img {
         width: 40%;
+    }
+
+    .componentes{
+        padding: 0.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .componentes__item img {
+        max-width: 40px;
     }
 }
 
