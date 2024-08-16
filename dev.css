@@ -424,6 +424,31 @@ a{
     font-size: clamp(1rem, 2.5vw, 1.6rem);
 }
 
+.ampliar-proyecto{
+    
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-out;
+}
+
+.ampliar-proyecto:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    filter: brightness(1.2);
+}
+
+
+.galery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30vw,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;
+}
+
+.galery>img{
+    width: 100%;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 760px){
     .foto-perfil {
         float: none;
