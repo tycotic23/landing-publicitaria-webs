@@ -20,10 +20,7 @@ width: clamp(100px, 30vw, 200px);
     font-size: clamp(1rem, 4vw, 3rem);
 }
 
-.h2-cv{
-    color:var(--color-main-aqua-green);
-    font-size: clamp(1.5rem, 3vw, 2rem);
-}
+
 
 .section-contactos{
     display: flex;
@@ -338,7 +335,7 @@ a{
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:6rem;
 }
 
 
@@ -347,19 +344,32 @@ a{
     max-width: 600px;
 }
 
+.h2-cv{
+    color:var(--color-main-aqua-green);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    /* background-color: white; */
+    /* width: max-content; */
+}
+
+
+    
+
 .lista-formacion__ul{
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:1rem;
+    gap:2rem;
+    list-style: none;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
-.lista-profesional{
-    list-style: none;
-    padding:0;
+/* .lista-profesional{
+    
     padding-top: 0.5rem;
-}
+} */
 
 .lista-profesional__sublista{
     list-style-position: inside;
